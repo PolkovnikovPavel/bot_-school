@@ -86,10 +86,11 @@ for event in longpoll.listen():
                     str = 'Ошибка в отправке'
 
             elif any(map(lambda x: event.text.lower() == x, key_words.random)):
-                answer = requests.get(
-                    'https://api.thecatapi.com/v1/images/search').text
-                img = json.loads(answer)
-                str = f"Случайный котик! {img[0]['url']}"
+                #answer = requests.get(
+                #    'https://api.thecatapi.com/v1/images/search').text
+                #img = json.loads(answer)
+                #str = f"Случайный котик! {img[0]['url']}"
+                pass
 
             elif 'расписание на' == ' '.join(event.text.lower().split()[:2]):
                 day = event.text.lower().split()[2]

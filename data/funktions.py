@@ -33,7 +33,7 @@ def create_keyboard():
     keyboard.add_button("добавить ответ")
     keyboard.add_line()
     keyboard.add_button("help")
-    keyboard.add_button("рандом!")
+    keyboard.add_button("Описание")
     keyboard.add_line()
     keyboard.add_button("расписание на сегодня")
 
